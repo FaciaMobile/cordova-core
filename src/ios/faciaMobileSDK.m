@@ -12,10 +12,12 @@
     NSDictionary *config = [command.arguments objectAtIndex:1];
 
     Facia *facia = [[Facia alloc] init];
-
+    NSMutableDictionary *modifiedConfig = [[self parseJSONString:config] mutableCopy];
+  
+    modifiedConfig[@"platform"] = @"cordova-1.0.5";
     [facia createRequestWithParentViewController:self.viewController
                                     accessToken:accessToken
-                                         configs:config
+                                         configs:modifiedConfig
                                       completion:^(NSDictionary *result) {
         if (result) {
             pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:result];
