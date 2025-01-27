@@ -13,7 +13,7 @@
     Facia *facia = [[Facia alloc] init];
     NSMutableDictionary *modifiedConfig = [[self parseJSONString:config] mutableCopy];
   
-    modifiedConfig[@"platform"] = @"cordova-1.0.9";
+    modifiedConfig[@"platform"] = @"cordova-1.1.0";
 
 
     [facia createRequestWithParentViewController:self.viewController

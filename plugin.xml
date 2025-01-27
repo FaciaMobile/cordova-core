@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="com.facia.cordova" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="com.facia.cordova" version="1.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>faciaMobileSDK</name>
     <js-module name="faciaMobileSDK" src="www/faciaMobileSDK.js">
         <clobbers target="cordova.plugins.faciaMobileSDK" />
@@ -18,7 +18,7 @@
                 <source url="https://github.com/CocoaPods/Specs.git"/>
             </config>
             <pods use-frameworks="true">
-                <pod name="Facia" spec="3.1.2"/>
+                <pod name="Facia" spec="3.1.3"/>
             </pods>
         </podspec>
     </platform>

@@ -1,17 +1,23 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 34  
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 30
+        targetSdkVersion 34  
+    }
+    viewBinding {
+        enabled = true
     }
 }
 
 repositories {
+    mavenCentral()
+    google()
     maven { url 'https://jitpack.io' }
 }
 
 dependencies {
     implementation 'com.github.FaciaMobile:android-core:3.1.0'
+    implementation 'com.google.android.material:material:1.12.0'
 }
